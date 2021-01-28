@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    justify-content: left;
+    background: url("/photoes/educational-technology.png") no-repeat;
+}
+.container{
+    display: grid;
+    height: 250vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar navbar"
+    "main main main main"
+    "left left left left"
+    "con1 con1 con2 con2"
+    "con3 con3 con4 con4"
+    "footer footer footer footer";
+}
+
+.navbar a:hover {
+    color: orange;
+  }
+.active{
+    background-color: rgb(65, 125, 216);
+    border-radius: 10px;
+    padding: 12px;
+}
+.link a {
+    float: right;
+    margin: -10px 20px 0px 0px ;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: rgb(23, 23, 24);
+    margin-right: 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30px;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 10px;
+    color: rgb(252, 249, 240);
+}
+main{
+    height: 90%;
+    grid-area: main;
+    margin: 20px;
+    background-size: cover;
+    background-position: center -140px;
+    border-radius: 10px;
+}
+.image-container1 {
+    background: rgba(53, 70, 100, 0.438);
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    border-radius: 1000px;
+  }
+.left{
+    display: flex;
+    background: rgba(180, 203, 248, 0.39);
+    grid-area: left;
+    margin: 5px 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1, h3, h2, h4{
+    margin: 10px;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: rgb(34, 148, 214);
+}
+.con1{
+    grid-area: con1;
+    margin: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+.con1 img {
+    margin: 10px;
+    height: 100%;
+}
+.con2{
+    background: rgba(204, 220, 248, 0.336);
+    grid-area: con2;
+    margin: 20px 20px 0px 0px;
+    border-radius: 20px;
+}
+.con3{
+    grid-area: con3;
+    margin: 10px;
+}
+.con3 img {
+    margin: 10px;
+    height: 100%;
+}
+.con4{
+    background: rgba(204, 220, 248, 0.336);
+    grid-area: con4;
+    margin: 20px 20px 20px 0px;
+    border-radius: 20px;
+}
+footer{
+    background: rgb(174, 208, 228);
+    grid-area: footer;
+    height: 40vh;
+}
+.image-container {
+    background-image: url("/photoes/5.png");
+    background-size: cover;
+    position: relative;
+    height: 200px;
+  }
+  
+  .text {
+    background-color: white;
+    color: rgba(82, 49, 233, 0.178);
+    font-size: 10vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+  }
+P {
+    font-family: serif;
+    color: teal;
+}
+.con1,
+.con3,
+.con4,
+.letf,
+.con2{
+    height: 40vh;
+    margin: 20px;
+}
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+        grid-template-areas: 
+        "navbar"
+        "main"
+        "left"
+        "con1"
+        "con2"
+        "con3"
+        "con4"
+        "footer";
+    }
+    .navbar {
+        width: 100%;
+        overflow: auto;
+        height: 20vh;
+      }
+      .navbar a {
+        float: left;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      .navbar a:hover {
+        background-color: rgb(117, 139, 235);
+        border-radius: 10px;
+      }
+      .active {
+        background-color: #4CAF50;
+        border-radius: 10px;
+      }
+      .navbar a {
+        float: none;
+        display: block;
+      }
+      .email{
+        float: left;
+        margin: 10px 0px;
+    }
+    .con1,
+    .con3,
+    .con4,
+    .letf,
+    .con2{
+        height: 40vh;
+        margin: 20px;
+    }
+    main{
+        height: 50vh;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+
+}
