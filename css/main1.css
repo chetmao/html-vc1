@@ -1,9 +1,9 @@
 body{
+    background: url(/photoes/f.png) no-repeat;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     justify-content: left;
-    background: url("/photoes/educational-technology.png") no-repeat;
 }
 .container{
     display: grid;
@@ -20,7 +20,10 @@ body{
 }
 
 .navbar a:hover {
+    background: rgb(85, 74, 248);
+    padding: 10px;
     color: orange;
+    border-radius: 10px;
   }
 .active{
     background-color: rgb(65, 125, 216);
@@ -86,6 +89,10 @@ main{
     border-radius: 20px;
     padding: 10px;
 }
+.left img {
+    height: 100%;
+    width: 100%;
+}
 h1, h3, h2, h4{
     margin: 10px;
     justify-content: space-evenly;
@@ -98,28 +105,34 @@ h1, h3, h2, h4{
     border-radius: 20px;
 }
 .con1 img {
-    margin: 10px;
     height: 100%;
+    width: 80%;
 }
 .con2{
     background: rgba(204, 220, 248, 0.336);
     grid-area: con2;
-    margin: 20px 20px 0px 0px;
+    margin: 20px 20px 20px 0px;
     border-radius: 20px;
+}
+.con2 .paro1{
+    width: 100%;
 }
 .con3{
     grid-area: con3;
     margin: 10px;
 }
 .con3 img {
-    margin: 10px;
     height: 100%;
+    width: 80%;
 }
 .con4{
     background: rgba(204, 220, 248, 0.336);
     grid-area: con4;
     margin: 20px 20px 20px 0px;
     border-radius: 20px;
+}
+.con4 .paro2{
+    width: 100%;
 }
 footer{
     background: rgb(174, 208, 228);
@@ -144,8 +157,8 @@ input[type=text] {
   }
   
   .text {
-    background-color: white;
-    color: rgba(82, 49, 233, 0.178);
+    background-color: rgb(15, 14, 14);
+    color: rgba(238, 235, 245, 0.178);
     font-size: 10vw; 
     font-weight: bold;
     margin: 0 auto;
@@ -160,7 +173,7 @@ input[type=text] {
   }
 P {
     font-family: serif;
-    color: teal;
+    color: rgb(6, 8, 8);
 }
 .con1,
 .con3,
@@ -170,7 +183,7 @@ P {
     height: 40vh;
     margin: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
@@ -224,6 +237,18 @@ P {
         height: 50vh;
         margin: 10px;
         border-radius: 30px;
+    }
+    .con1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .con3 img {
+        height: 100%;
+        width: 100%;
+    }
+    .left img {
+        height: 100%;
+        width: 100%;
     }
 
 
