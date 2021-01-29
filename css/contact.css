@@ -34,10 +34,24 @@ height: 200vh;
 * {
     box-sizing: border-box;
   }
-  
+  ul li{
+    text-transform: uppercase;
+  }
+  ul li:hover{
+    cursor: pointer;
+  }
+  .row .act{
+    background: rgb(128, 207, 24);
+    color: rgb(0, 47, 255);
+    font-size: larger;
+  }
   img {
     width: 100%;
     height: 210px;
+    border-radius: 20px;
+  }
+  img:hover {
+    cursor: pointer;
   }
   
   .row:after {
@@ -200,12 +214,12 @@ input[type=submit]:hover{
   .icons a {
     float: right;
     padding: 10px;
-    color: rgb(242, 250, 248);
+    color: rgb(165, 8, 113);
     text-decoration: none;
   }
   
   .icons a:hover{
-    color: rgb(236, 69, 13);
+    color: rgb(236, 13, 13);
     background-color: #000;
   }
   .email1 {
