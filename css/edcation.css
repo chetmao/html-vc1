@@ -1,5 +1,5 @@
 body {
-    background-image: url("/photoes/g.jpg");
+    background-image: url("/html-vc1/photoes/g.jpg");
     background-color: #f2f3fa67;
     height: 400px;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ main{
 
 }
 .image-container2 {
-    background-image: url("/photoes/a.jpeg");
+    background-image: url("/html-vc1/photoes/a.jpeg");
     background-color: #e4edf82d;
     height: 350px;
     width: 100%;
