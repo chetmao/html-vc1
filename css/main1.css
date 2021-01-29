@@ -1,5 +1,5 @@
 body{
-    background: url(/html-vc1/photoes/f.png) no-repeat;
+    background: url(/photoes/f.png) no-repeat;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -150,7 +150,7 @@ input[type=text] {
     box-sizing: border-box;
   }
 .image-container {
-    background-image: url("/html-vc1/photoes/5.png");
+    background-image: url("/photoes/5.png");
     background-size: cover;
     position: relative;
     height: 200px;
