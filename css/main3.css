@@ -82,7 +82,7 @@ height: 200vh;
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 600px) {
     .navbar a {
       float: left;
       padding: 22px;
@@ -185,11 +185,11 @@ input[type=submit]:hover{
   }
   .wrong {
       text-transform: uppercase;
-      background: rgba(23, 235, 206, 0.5);
+      background: rgba(153, 238, 238, 0.5);
       padding: 20px;
   }
   .wrong h1 {
-    color: rgb(64, 14, 245);
+    color: rgb(61, 29, 177);
   }
   .footer {
     width: 100%;
@@ -199,7 +199,7 @@ input[type=submit]:hover{
   
   .icons a {
     float: right;
-    padding: 40px;
+    padding: 10px;
     color: rgb(242, 250, 248);
     text-decoration: none;
   }
@@ -218,7 +218,7 @@ input[type=submit]:hover{
 }
 .email {
     background-color: #0863e22d;
-    height: 200px;
+    height: 220px;
     width: 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -227,5 +227,5 @@ input[type=submit]:hover{
 }
 button{
   background: #000;
-  border-radius: 30px;
+  border-radius: 20px;
 }
